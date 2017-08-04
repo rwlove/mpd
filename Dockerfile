@@ -41,7 +41,7 @@ COPY scripts/mpd_entrypoint.sh /usr/local/bin/mpd_entrypoint.sh
 
 RUN mkdir -p /run/mpd/
 
-EXPOSE 6600 8000
+EXPOSE 6600
 
 CMD ["/usr/local/bin/mpd_entrypoint.sh"]
 

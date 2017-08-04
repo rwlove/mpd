@@ -29,6 +29,5 @@ docker run \
        -v ${DATABASE_DIR}:/var/lib/mpd/ \
        -v ${LOG_DIR}:/var/log/mpd/mpd.log \
        -p 6600:6600 \
-       -p 8000:8000 \
        -h ${MPD_HOSTNAME} \
        services/mpd ${CMD}
