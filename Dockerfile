@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:17.04
 
 MAINTAINER “Robert Love” <terp4life2001@gmail.com>
 
@@ -6,8 +6,7 @@ MAINTAINER “Robert Love” <terp4life2001@gmail.com>
 # Configure Environment Variables
 #####
 
-# # Ensure UTF-8 lang and locale
-RUN locale-gen en_US.UTF-8
+# Ensure UTF-8 lang and PST time zone
 ENV LANG       en_US.UTF-8
 ENV LC_ALL     en_US.UTF-8
 ENV TZ         America/Los_Angeles
