@@ -25,6 +25,7 @@ docker run \
        -v /etc/machine-id:/etc/machine-id \
        -v /var/lib/dbus:/var/lib/dbus \
        -v /etc/localtime/:/etc/localtime/:ro \
+       -v ${MUSIC_MOUNT_POINT}:/opt/music:ro \
        -p 6600:6600 \
        -p 8000:8000 \
        -h ${MPD_HOSTNAME} \
